@@ -100,9 +100,15 @@ nav label span:after {
 nav input {
   display: none;
 }
-nav input:checked ~ ul {
+input:checked ~ ul {
   max-height: 500px;
+  background-color: #ffffff;
+  padding: 10px;
+  margin: -14px -10px 0 -10px;
+  z-index: 2;
+  width: 414px;
 }
+
 nav input:checked ~ label span {
   background: transparent;
 }
@@ -201,7 +207,6 @@ main {
   grid-template-rows: auto;
   grid-gap: 10px;
   position: relative;
-  top: 25px;
 }
 main img {
   width: 100%;
@@ -247,7 +252,7 @@ html {
 aside {
   background-color: #7abfbf;
   position: relative;
-  top: 10px;
+  top: 25px;
 }
 
 h1 {
